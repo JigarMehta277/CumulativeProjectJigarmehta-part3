@@ -1,0 +1,33 @@
+﻿@model CumulativeProjectJigarmehta.Models.Teacher
+@{
+    ViewBag.Title = "Update";
+}
+
+<div>
+    <nav>
+        <a class="navlink" href="/Teacher/Show/@Model.TeacherId">Back</a>
+    </nav>
+</div>
+<h2>Update Author</h2>
+<form method="post" action="/Teacher/Update/@Model.TeacherId">
+    <div>
+        <label>First Name: </label>
+        <input type="text" name="TeacherFname" id="TeacherFname" value="@Model.TeacherFname" />
+    </div>
+    <div>
+        <label>Last Name: </label>
+        <input type="text" name="TeacherLname" id="TeacherLname" value="@Model.TeacherLname" />
+    </div>
+    <div>
+        <label>Employee Number: </label>
+        <input type="text" name="EmployeeNumber" id="EmployeeNumber" value="@Model.EmployeeNumber" />
+    </div>
+    <div>
+        <label>Salary: </label>
+        <input type="text" name="Salary" id="Salary" value="@Model.Salary" />
+    </div>
+    <div>
+        <input type="submit" value="Update" />
+    </div>
+</form>
+

@@ -1,0 +1,22 @@
+﻿@model CumulativeProjectJigarmehta.Models.Teacher
+
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<!--This is the html design for confirmation of deletion-->
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/Show/@Model.TeacherId">Cancel</a>
+    </nav>
+    <p>
+        <h2>Are you sure you want to delete @Model.TeacherFname @Model.TeacherLname?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/Teacher/Delete/@Model.TeacherId">
+        <button class="delbutton">
+            Confirm Delete
+        </button>
+    </form>
+</div>
+

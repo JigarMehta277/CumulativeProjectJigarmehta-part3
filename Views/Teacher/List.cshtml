@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CumulativeProjectJigarmehta.Models.Teacher>
+@{
+    ViewBag.Title = "List";
+}
+
+
+<h2>Teacher List</h2>
+<nav>
+    <a class="navlink" href="/Teacher/New">Add new Teacher</a>
+</nav>
+
+<form action="/Teacher/List" method="GET">
+    <input type="text" name="SearchKey" />
+    <input type="submit" value="Search" />
+</form>
+
+
+
+@foreach (var teacher in Model)
+{
+
+    <div><a href="/Teacher/Show/@teacher.TeacherId">@teacher.TeacherFname @teacher.TeacherLname</a> </div>
+
+}
+

@@ -1,0 +1,51 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/*This is the css for the link which allows user to go back to list|*/
+.navlink {
+    float: left;
+    text-decoration: none;
+    color: blueviolet;
+    margin-right: 20px;
+}
+
+/*This is the css for delete button which allows user to delete the user content*/
+.delbutton {
+    display: block;
+    margin: 0 auto;
+    color: blueviolet;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+/*This is the css for the delete link which takes user to the delete confirmation page */
+.dellink {
+    float: right;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}
